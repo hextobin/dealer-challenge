@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DealerChallenge</title>
+    <title>Just A Dealer</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render "layouts/nav" %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
