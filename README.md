@@ -13,12 +13,12 @@ Welcome!  Thank you for taking the time to complete this code challenge!
 
 Our car dealership has a simple rails app that they've been using to manage their staff and inventory. It's been working well, but there a few bugs, and a few new features that we'd like added to our app. Please complete the following:
 
-1. An inventory manager mistakenly added the same VIN to two different vehicles. 
+1 - An inventory manager mistakenly added the same VIN to two different vehicles. 
 
   Acceptance criteria:
   * You should only be able to add a VIN once to the database
 
-2. Managing the vehicle inventory has presented some problems since there are no rules around the data entered. Please normalize the data on the cars model that should not be a text field.
+2 - Managing the vehicle inventory has presented some problems since there are no rules around the data entered. Please normalize the data on the cars model that should not be a text field.
 
   Acceptance criteria:
   * Dropdowns for year, make, and model
@@ -26,12 +26,12 @@ Our car dealership has a simple rails app that they've been using to manage thei
   * Bonus: Use a public data source like [https://vpic.nhtsa.dot.gov/api/](https://vpic.nhtsa.dot.gov/api/) to populate this data
 
 
-3. Management would like to be able to track the list price of each vehicle.
+3 - Management would like to be able to track the list price of each vehicle.
 
   Acceptance criteria:
   * Add the ability to enter the list price for a vehicle
 
-4. Management would like the ability to track sales.
+4 - Management would like the ability to track sales.
 
   Acceptance criteria:
   * The sale should track which staff member sold the vehicle
@@ -39,7 +39,7 @@ Our car dealership has a simple rails app that they've been using to manage thei
   * Staff should be able to see a list of all sold vehicles
   * Staff should be able to see a list of all available vehicles
 
-5. The dealership has an ongoing competition between staff member showcasing the person who has sold the most blue cars.
+5 - The dealership has an ongoing competition between staff member showcasing the person who has sold the most blue cars.
 
   Acceptance criteria:
   * A card on the home page titled: "Top Salesperson"
