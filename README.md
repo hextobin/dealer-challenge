@@ -17,6 +17,7 @@ Welcome!  Thank you for taking the time to complete this code challenge!
   - Ability to track which staff member sold a vehicle
   - Ability to track the actual sale price of a vehicle
   - Ability to track that a vehicle was sold multiple times - we have very loyal customers!
+  
 1. The owner of the dealer loves friendly competition!  We'd like a feature on the home page that spotlights the top salesperson.  Acceptance criteria includes:
   - A card on the home page titled: "Top Salesperson"
   - The body of the card should have the name of the person who has sold the most blue cars
