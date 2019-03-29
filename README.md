@@ -2,14 +2,28 @@
 
 Welcome!  Thank you for taking the time to complete this code challenge!
 
-## Setup
-1. Fork this repo
-1. Run `bundle install`
-1. Run `rails db:setup`
-1. Commit changes for the stories below to your fork
-1. Submit a pull request to this repo
+## Instructions
+Before you get started, take a moment to review the instructions:
+* There are 5 tasks listed below. Please work through them and present your best solution to each. If you reach a point where you can't solve one, document what steps you tried, what did/didn't work, and what you think you could do to solve it.
+* For the purposes of this challenge, it's not necessary to have branches for each of the tasks.
+* Once you have completed the test, please let your contact know that it's done and we'll take a look at it. Please come prepared to discuss the decisions you made.
 
-## Tasks:
+## Dependencies
+* Ruby 2.5.1
+* MySQL
+
+## Setup
+* Make sure you have the dependencies above installed
+* Fork this repo
+* Clone your fork
+* cd `dealer-challenge`
+* Run `bundle install`
+* Run `cp config/database.yml.example config/database.yml`
+* Open `database.yml` and adjust the credentials as needed
+* Run `rails db:setup` (note there are seeds with some demo data)
+* Run `rails server`
+
+## Tasks
 
 Our car dealership has a simple rails app that they've been using to manage their staff and inventory. It's been working well, but there a few bugs, and a few new features that we'd like added to our app. Please complete the following:
 
@@ -44,3 +58,4 @@ Our car dealership has a simple rails app that they've been using to manage thei
   Acceptance criteria:
   * A card on the home page titled: "Top Salesperson"
   * The body of the card should have the name of the person who has sold the most blue cars
+
