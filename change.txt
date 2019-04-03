@@ -1,0 +1,2 @@
+added vin validation
+updated views to reflect model body_style
