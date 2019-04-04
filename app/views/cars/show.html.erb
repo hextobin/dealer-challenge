@@ -35,5 +35,21 @@
   <%= @car.year %>
 </p>
 
+<p>
+  <strong>Available:</strong>
+  <%= @car.available ? "Yes" : "No" %>
+</p>
+
+<p>
+  <strong>Sold By:</strong>
+  <% person = Staff.find(@car.sold_by)%>
+  <%= person.last_name %>
+</p>
+
+<p>
+  <strong>Sale Price:</strong>
+  <%= @car.sale_price %>
+</p>
+
 <%= link_to 'Edit', edit_car_path(@car) %> |
 <%= link_to 'Back', cars_path %>
