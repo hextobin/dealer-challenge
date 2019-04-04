@@ -84,6 +84,8 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
+    httparty (0.16.2)
+      multi_xml (>= 0.5.2)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
     jbuilder (2.8.0)
@@ -109,6 +111,7 @@ GEM
     minitest (5.11.3)
     msgpack (1.2.9)
     multi_json (1.13.1)
+    multi_xml (0.6.0)
     mysql2 (0.5.2)
     nenv (0.3.0)
     nio4r (2.3.1)
@@ -246,6 +249,7 @@ DEPENDENCIES
   byebug
   factory_bot_rails
   guard-rspec
+  httparty
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   mysql2

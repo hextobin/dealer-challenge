@@ -1,3 +1,4 @@
+require 'httparty'
 class CarsController < ApplicationController
   before_action :set_car, only: [:show, :edit, :update, :destroy]
 
@@ -14,11 +15,15 @@ class CarsController < ApplicationController
 
   # GET /cars/new
   def new
+    @car_models = Car.get_models()
+    @car_makes = Car.get_makes()
     @car = Car.new
   end
 
   # GET /cars/1/edit
   def edit
+    @car_models = Car.get_models()
+    @car_makes = Car.get_makes()
   end
 
   # POST /cars

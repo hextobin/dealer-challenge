@@ -13,16 +13,16 @@
 
   <div class="field">
     <%= form.label :make %>
-    <%= form.text_field :make %>
+    <%= form.select :make, options_for_select(@car_makes), include_blank: true %>
   </div>
 
   <div class="field">
     <%= form.label :model %>
-    <%= form.text_field :model %>
+    <%= form.select :model, options_for_select(@car_models), include_blank: true %>
   </div>
 
   <div class="field">
-    <%= form.label :model, "List Price" %>
+    <%= form.label :list_price, "List Price" %>
     <%= form.text_field :list_price %>
   </div>
 
@@ -42,9 +42,10 @@
   </div>
 
   <div class="field">
-    <%= form.label :year %>
-    <%= form.text_field :year %>
-  </div>
+    <%= form.label :year, "Year" %>
+    <% year = Date.today.year %>
+    <%= form.select :year, options_for_select((year-60)..(year+1), year)  %>
+  <div>
 
   <div class="actions">
     <%= form.submit %>
