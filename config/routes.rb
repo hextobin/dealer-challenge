@@ -3,4 +3,8 @@ Rails.application.routes.draw do
 
   resources :cars
   resources :staffs
+
+  get '/available', to: 'cars#available'
+  get '/sold', to: 'cars#sold'
+
 end
